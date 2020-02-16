@@ -6,17 +6,19 @@
     "serve": "vue-cli-service serve",
     "dev": "yarn serve",
     "build": "vue-cli-service build",
+    "start": "node server",
+    "heroku-postbuild": "yarn run build",
     "lint": "vue-cli-service lint"
   },
   "dependencies": {
     "core-js": "^3.6.4",
-    "vue": "^2.6.11",
+    "vue": "^2.6.11"
+  },
+  "devDependencies": {
     "vue-loading-overlay": "^3.2.0",
     "vue-router": "^3.1.5",
     "vue-select-image": "^1.7.0",
-    "vue-stash": "^2.0.1-beta"
-  },
-  "devDependencies": {
+    "vue-stash": "^2.0.1-beta",
     "@vue/cli-plugin-babel": "^4.2.0",
     "@vue/cli-plugin-eslint": "^4.2.0",
     "@vue/cli-service": "^4.2.0",
